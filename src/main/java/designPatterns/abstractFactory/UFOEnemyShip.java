@@ -23,7 +23,7 @@ public class UFOEnemyShip extends EnemyShip{
     // EnemyShipBuilding calls this method to build a
     // specific UFOEnemyShip
 
-    void makeShip() {
+    public void makeShip() {
 
         System.out.println("Making enemy ship " + getName());
 

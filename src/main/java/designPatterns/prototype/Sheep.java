@@ -2,7 +2,7 @@ package designPatterns.prototype;
 
 public class Sheep implements Animal {
 
-    public Sheep(){
+    public Sheep() {
 
         System.out.println("Sheep is Made");
 
@@ -37,7 +37,7 @@ public class Sheep implements Animal {
         return sheepObject;
     }
 
-    public String toString(){
+    public String toString() {
 
         return "Dolly is my Hero, Baaaaa";
 

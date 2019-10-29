@@ -8,13 +8,13 @@ public abstract class EnemyShip {
     // These can be changed easily by assigning new parts
     // in UFOEnemyShipFactory or UFOBossEnemyShipFactory
 
-    ESWeapon weapon;
-    ESEngine engine;
+    protected ESWeapon weapon;
+    protected ESEngine engine;
 
     public String getName() { return name; }
     public void setName(String newName) { name = newName; }
 
-    abstract void makeShip();
+    abstract public void makeShip();
 
     // Because I defined the toString method in engine
     // when it is printed the String defined in toString goes

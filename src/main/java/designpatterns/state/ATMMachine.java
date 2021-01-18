@@ -1,6 +1,8 @@
 package designpatterns.state;
 
-public class ATMMachine {
+import designpatterns.proxy.GetATMData;
+
+public class ATMMachine implements GetATMData {
 
     ATMState hasCard;
     ATMState noCard;
@@ -69,5 +71,9 @@ public class ATMMachine {
     public ATMState getNoCardState() { return noCard; }
     public ATMState getHasPin() { return hasCorrectPin; }
     public ATMState getNoCashState() { return atmOutOfMoney; }
+
+    public ATMState getATMState() { return atmState; }
+    public int getCashInMachine() { return cashInMachine; }
+
 
 }
